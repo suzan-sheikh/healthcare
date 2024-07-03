@@ -154,6 +154,12 @@ header .navbar ul li a:hover {
 #menu_bar {
   display: none;
 }
+header label {
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
 /* nav area end */
 /* header area end */
 /* --------------------------------------------------------------------- */
