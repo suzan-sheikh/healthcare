@@ -1,11 +1,438 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare</title>
+    <!-- favicon link start 🙂-->
+    <link rel="shortcut icon" href="./Images/icon.png" type="image/x-icon" />
+    <!-- favicon link start 💟-->
+    <!-- CSS file link start -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- CSS file link end -->
+    <!-- fontAwesome link start 🙂-->
+    <script
+      src="https://kit.fontawesome.com/2232ca91d0.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- fontAwesome  link end 💟-->
+    <!-- google font link start 🙂-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- fontAwesome  link end 💟-->
+  </head>
+  <body>
+
+    <!-- header section start -->
+    <header class="container">
+      <!-- logo area start -->
+      <div class="logo">
+        <a href="#"><img src="./Images/logo dark.png" alt="header image"></a>
+      </div>
+      <!-- logo area end -->
+      <!-- mobile menu area start -->
+      <input type="checkbox" id="menu_bar">
+      <label for="menu_bar"><i class="fa-solid fa-bars"></i></label>
+      <!-- mobile menu area end -->
+      <!-- nav area start -->
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+      <!-- nav area end -->
+      <div>
+        <span class="button">Appointment <i class="fa-solid fa-arrow-right-long"></i></span>
+        
+      </div>
+    </header>
+    <!-- header section end -->
   
-</body>
+    <!-- main section start -->
+    <main>
+      <!-- Banner Section start -->
+      <section class="container">
+        <div class="banner-section">
+        </div>
+      </section>
+      <!-- Banner section end --> 
+      
+      <!-- We Help To Get solutions section start -->
+      <section>
+        <div class="container">
+          <div class="solutions_wrapper">
+            <div>
+              <button class="banner_third">Who we are</button>
+              <div class="solution_left">
+                <h2 class="section_heading">We Help To Get <br> Solutions</h2>
+                <p class="solution_left_p">We are proud to be a trusted healthcare provider in our community, and we look forward to serving you and your family with excellence, integrity, and compassion. Your health is our priority, and we are here for you every step of the way. We believe in treating each patient with dignity, respect, and empathy, ensuring that they receive the attention and care they deserve.
+                </p> 
+              </div>
+              <button class="button_secondary">Learn More</button>
+ 
+            </div>
+            <div>
+              <div>
+                <img src="./Images/section.png" alt="">
+
+              </div>
+              <div class="card1">
+                <h3>Best Price Guarantee</h3>
+                <p> To provide high-quality healthcare services that are accessible, personalized, and patient-centered.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- We Help To Get solutions section end-->
+
+      <!-- Empowering Health, Enriching Lives start -->
+      <section>
+        <div class="container">
+          <div class="grid_section">
+
+            <div>
+              <button class="banner_third">Services</button>
+              <div class="solution_left">
+                <h2 class="section_grid_heading section_heading">Empowering Health,  <br>Enriching Lives</h2>
+                <p class="solution_grid_left_p">We are committed to providing high-quality, compassionate care to every patient we serve. Whatever your healthcare needs may be, you can trust us to be your partner in health and wellness.
+                </p> 
+              </div>
+              <button class="button_secondary">Learn More</button> 
+            </div>
+
+            <div class="grid_card_wrapper">
+              <div>
+                <img src="./Images/grid1.png" alt="card image">
+              </div>
+              <div class="grid_card">
+                <div>
+                  <h3>Advanced Technology</h3>
+                  <p> Our surgeons are trained in the latest robotic surgical techniques, which allow for greater precisionn</p>
+                </div>
+                <div>
+                  <button class="round_button"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="grid_card_wrapper">
+              <div>
+                <img src="./Images/grid2.png" alt="card image">
+              </div>
+              <div class="grid_card">
+                <div>
+                  <h3>Online Doctor Meet</h3>
+                  <p> For your online doctor meet needs, we provide a convenient and secure platform where you can connect.</p>
+                </div>
+                <div>
+                  <button class="round_button"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="grid_card_wrapper">
+              <div>
+                <img src="./Images/grid1.png" alt="card image">
+              </div>
+              <div class="grid_card">
+                <div>
+                  <h3>Consultancy health</h3>
+                  <p> 
+                    Our consultancy offers access to trained surgeons proficient in advanced robotic surgical techniques.</p>
+                </div>
+                <div>
+                  <button class="round_button"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Empowering Health, Enriching Lives end -->
+      <!-- Testimonial Section start -->
+
+      <section style="margin-top: 60px;"> 
+        <!-- slider top -->
+        <div class="container">
+          <button class="banner_third">Testimonial</button>
+          <h2 class="section_grid_heading section_heading" style="margin-top: 5px;">What they say about us</h2>
+        </div>
+        <div class="container_slider container">
+          <input type="radio" name="dot" id="one">
+          <input type="radio" name="dot" id="two">
+          <div class="main-card">
+            <div class="cards">
+              <div class="card">
+               <div class="content">
+                 <div class="details">
+                   <div class="name">Expertise and Compassion Combined</div>
+                   <div class="job">I can't thank enough for their exceptional care. The doctors and staff showed incredible expertise and throughout my treatment journey. </div>
+                  </div>
+                 <div class="media-icons">
+                  <div>
+                    <img src="./Images/Ellipse1.png" alt="ellipse image">
+                  </div>
+                  <div >
+                    <div>
+                      <p> <span style="color: #020043; font-weight: 800;">Sarah D,</span> IT Professional</p>
+                    </div>
+                    <div style="text-align: left; margin-top: 4px;">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+  
+                  </div>
+  
+                 </div>
+               </div>
+              </div>
+              <div class="card">
+                <div class="content">
+                  <div class="details">
+                    <div class="name">Life-Saving Care, Life-Changing Experience</div>
+                    <div class="job">My experience at [Healthcare Provider Name] was life-changing. The prompt and accurate diagnosis, coupled with the advanced treatments</div>
+                   </div>
+                  <div class="media-icons">
+                   <div>
+                     <img src="./Images/Ellipse2.png" alt="ellipse image">
+                   </div>
+                   <div >
+                     <div>
+                       <p> <span style="color: #020043; font-weight: 800;">Michael R,</span> Executive</p>
+                     </div>
+                     <div style="text-align: left; margin-top: 4px;">
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                     </div>
+   
+                   </div>
+   
+                  </div>
+                </div>
+               </div>
+               <div class="card">
+                <div class="content">
+                  <div class="details">
+                    <div class="name">A Partner in Health and Wellness</div>
+                    <div class="job">As a busy professional, I appreciate the convenience and quality of care I receive at [Healthcare Provider Name] and other. </div>
+                   </div>
+                  <div class="media-icons">
+                   <div>
+                     <img src="./Images/Ellipse3.png" alt="ellipse image">
+                   </div>
+                   <div >
+                     <div>
+                       <p> <span style="color: #020043; font-weight: 800;"> David S,</span> Lawyer</p>
+                     </div>
+                     <div style="text-align: left; margin-top: 4px;">
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                     </div>
+   
+                   </div>
+   
+                  </div>
+                </div>
+               </div>
+            </div>
+            <div class="cards">
+              <div class="card">
+                <div class="content">
+                  <div class="details">
+                    <div class="name">Expertise and Compassion Combined</div>
+                    <div class="job">I can't thank enough for their exceptional care. The doctors and staff showed incredible expertise and throughout my treatment journey. </div>
+                   </div>
+                  <div class="media-icons">
+                   <div>
+                     <img src="./Images/Ellipse1.png" alt="ellipse image">
+                   </div>
+                   <div >
+                     <div>
+                       <p> <span style="color: #020043; font-weight: 800;">Sarah D,</span> IT Professional</p>
+                     </div>
+                     <div style="text-align: left; margin-top: 4px;">
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                     </div>
+   
+                   </div>
+   
+                  </div>
+                </div>
+               </div>
+               <div class="card">
+                <div class="content">
+                  <div class="details">
+                    <div class="name">A Partner in Health and Wellness</div>
+                    <div class="job">As a busy professional, I appreciate the convenience and quality of care I receive at [Healthcare Provider Name] and other. </div>
+                   </div>
+                  <div class="media-icons">
+                   <div>
+                     <img src="./Images/Ellipse3.png" alt="ellipse image">
+                   </div>
+                   <div >
+                     <div>
+                       <p> <span style="color: #020043; font-weight: 800;"> David S,</span> Lawyer</p>
+                     </div>
+                     <div style="text-align: left; margin-top: 4px;">
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                     </div>
+   
+                   </div>
+   
+                  </div>
+                </div>
+               </div>
+               <div class="card">
+                <div class="content">
+                  <div class="details">
+                    <div class="name">Expertise and Compassion Combined</div>
+                    <div class="job">I can't thank enough for their exceptional care. The doctors and staff showed incredible expertise and throughout my treatment journey. </div>
+                   </div>
+                  <div class="media-icons">
+                   <div>
+                     <img src="./Images/Ellipse1.png" alt="ellipse image">
+                   </div>
+                   <div >
+                     <div>
+                       <p> <span style="color: #020043; font-weight: 800;">Sarah D,</span> IT Professional</p>
+                     </div>
+                     <div style="text-align: left; margin-top: 4px;">
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                       <i class="fa-solid fa-star"></i>
+                     </div>
+   
+                   </div>
+   
+                  </div>
+                </div>
+               </div>            
+            </div>
+          </div>
+          <div class="button_slider">
+            <label for="one" class=" active one"></label>
+            <label for="two" class="two"></label>
+          </div>
+        </div> 
+      </section>
+      <!-- Testimonial Section end -->
+
+      <!-- FAQ Section start -->
+       <section>
+        <div class="faq-container">
+          <div>
+            <button class="banner_third">Faq</button>
+            <h2 style="margin-top: 15px; margin-bottom: 15px;">Frequntly Asked Question</h2>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq1" class="faq-toggle">
+            <label for="faq1" class="faq-question down"><p>How can I schedule an appointment?</p> <i class="fa-solid fa-angle-down"></i></label>
+            <div class="faq-answer">
+              <p>Pick a date and time slot that is convenient for you from the available options. Review your appointment details, ensure everything is correct, and confirm your booking.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <input type="checkbox" id="faq2" class="faq-toggle">
+            <label for="faq2" class="faq-question down"><p>Do you accept insurance?</p> <i class="fa-solid fa-angle-down"></i></label>
+            <div class="faq-answer">
+              <p>Yes, we accept insurance. Please provide us with your insurance details during your appointment scheduling process, and we will verify coverage and handle the necessary billing procedures on your behalf. </p>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <input type="checkbox" id="faq3" class="faq-toggle">
+            <label for="faq3" class="faq-question down"><p>What should I bring to my appointment?</p> <i class="fa-solid fa-angle-down"></i></label>
+            <div class="faq-answer">
+              <p>Bring a valid photo ID such as a driver's license, passport, or government-issued ID. If you have insurance coverage, please bring your insurance card. This will help us verify your coverage and process any necessary claims.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <input type="checkbox" id="faq4" class="faq-toggle">
+            <label for="faq4" class="faq-question down"><p>Do you offer telemedicine appointments?</p> <i class="fa-solid fa-angle-down"></i></label>
+            <div class="faq-answer">
+              <p>Yes, we offer telemedicine appointments for your convenience. Through our telemedicine services, you can consult with healthcare professionals remotely using video conferencing or phone calls. </p>
+            </div>
+          </div>
+        </div>
+       </section>
+      <!-- FAQ Section end -->
+
+      <!-- down banner section start -->
+
+      <!-- down banner section end -->
+      <section class="container">
+        <div class="banner_bottom">
+          <div class="button_area">
+            <h2>Get Your <br>
+              First Appointment <br>
+              at 50% Off!</h2>
+              <button class="button_secondary gap">Appointment</button>
+              <button class="banner_button">Learn More</button>
+          </div>
+          <div><img src="./Images/logo light.png" alt="logo"></div>
+        </div>
+      </section>
+    </main>
+        
+        
+    <!-- footer section start -->
+  
+    <footer>
+      <div class="footer-container">
+        <div class="container footer_wrapper">
+          <div class="footer_logo">
+            <div><img src="./Images/logo light.png" alt="footer logo"></div>
+            <div><h2>123 Main Street Anytown, USA? <br> Postal Code: 12345</h2></div>
+            <div><h2>Support: support@oyolloo.com  (Available : 10:00am to 07:00pm)</h2></div>
+          </div> 
+          <div class="footer_menu">
+            <a href="#">Home</a>
+            <a href="#">About us</a>
+            <a href="#">Success Page</a>
+            <a href="#">Terms and condition</a>    
+          </div> 
+          <div class="footer_menu">
+            <a href="#">Services</a>
+            <a href="#">Scheduling</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Patient Portal</a>  
+          </div>
+          <div>
+            <div style="margin-bottom: 18px;">
+              <a href="#" style="color: #fff; text-decoration: none;">Follow Us</a>
+            </div>
+            <div class="footer_socil flex">
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>@copy right</p>
+          </div>        
+        </div>      
+      </div>
+    </footer>
+    <!-- footer section end -->  
+  </body>
+  </html>
+  
+  
+  <!-- 💛💛💚💗Thank you very much sir for viewing my assignment💗💚💛💛  -->
 </html>
