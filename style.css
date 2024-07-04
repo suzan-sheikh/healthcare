@@ -27,54 +27,7 @@
   text-align: center;
   color: #fff;
 }
-.sec-description{
-  font-size: 1rem;
-  color: rgba(19, 19, 24, 0.70);
-  font-weight: 400;
-  line-height: 20px;
-  margin-bottom: 24px;
-  margin-top: 24px;
-}
-.headding-title{
-  font-size: 2.5rem;
-  color: #131318;
-  font-weight: 800;
-  margin-bottom: 20px;
-}
-.btn-primary{
-  border-radius: 8px;
-  background: #FF5400;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px 20px;
-  font-size: 20px;
-  color: #fff;
-  transition: all ease 1s;
-}
-.btn-primary:hover{
-  background: #065fd4;
-}
-.heading-two{
-  color: #131318;
-  text-align: center;
-  font-size: 2.5rem;
-  font-weight: 800;
-  text-align: center;
-}
-.heading-p{
-  color: rgba(19, 19, 24, 0.70);
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 26px;
-  width: 440px;
-  margin: 40px auto;
-}
-.footer-logo a, .solical-area a, .logo a{
-  text-decoration: none;
-  color: #000;
-}
+
 .banner_third{
   border: 1px solid #020043;
   padding: 8px;
@@ -162,8 +115,8 @@ header label {
 }
 /* nav area end */
 /* header area end */
-/* --------------------------------------------------------------------- */
-/* banner section start */
+/* ****************************************************************** */
+/* banner section start --------------------*/
 .banner-section {
   background-image: linear-gradient(179.57deg, rgba(0, 193, 157, 0) -25.412%,rgba(2, 0, 67, 0.47) 107.111%),
     url("./Images/banner.png");
@@ -186,9 +139,9 @@ header label {
   color: #fff;
   transition: all ease-in-out 0.5s;
 }
-/* banner section end */
+/* banner section end ------------------------*/
 
-/* Care Section start */
+/* Care Section start ------------------------*/
 .card_flex{
   display: flex;
   align-items: end;
@@ -248,11 +201,12 @@ header label {
   position: absolute;
   top: 0;
 }
-/* Care Section end */
+.margin-top{
+  margin-top: 60px;
+}
+/* Care Section end -----------------------------*/
 
-
-
-/* solutions section start */
+/* solutions section start -------------------- */
 .solutions_wrapper{
   margin-top: 80px;  
   display: flex;
@@ -260,7 +214,7 @@ header label {
   justify-items: center;
   gap: 62px;  
   position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .section_heading{
   margin: 30px 0px 30px 0px;
@@ -306,13 +260,15 @@ header label {
   line-height: 22px;
   text-align: left;
 }
-/* solutions section end */
-/* Empowering section start */
+/* solutions section end ---------------------------- */
+/* Empowering section start -------------------------*/
 .grid_card_wrapper{
   position: relative;
+  /* width: 100%; */
 }
 .grid_card_wrapper img{
   border-radius: 30px;
+  /* width: 100%; */
 }
 .grid_card{
   background-color: #02004385;
@@ -356,17 +312,26 @@ header label {
   margin: 30px 0px 30px 0px;
 
 }
-.solution_grid_left_p{
+
+.empowering_heading{
+  font-size: 34px;
+  font-weight: 600;
+  color: #020043;
+  width: 100%;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.empowering_para{
   text-align: justify;
   line-height: 29px;
   font-size: 16px;
   margin-bottom: 32px;
-  margin-right: 77px; 
+  margin-right: 77px;
 }
-/* Empowering section end */
+/* Empowering section end ---------------------------*/
 
-
-/* slider start */
+/* slider start ------------------------------------*/
 .container_slider{
   max-width: 950px;
   width: 100%;
@@ -449,7 +414,7 @@ header label {
   height: 15px;
   width: 15px;
   border-radius: 20px;
-  background: #020043;
+  background: #FFC637;
   margin: 0 4px;
   cursor: pointer;
   transition: all 0.5s ease;
@@ -488,13 +453,13 @@ input[type="radio"]{
     width: 100%;
   }
 }
-/* slider end */
+/* slider end ----------------------------------*/
 
-/* FAQ section start */
+/* FAQ section start ---------------------------*/
 .faq-container {
   max-width: 1160px;
   margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 0px;
   margin-bottom: 100px;
 }
 
@@ -569,12 +534,12 @@ input[type="radio"]{
 .gap{
   margin-right: 10px;
 }
-/* banner bottom end */
+/* banner bottom end ----------------------------------*/
 
-/* footer section start */
+/* footer section start -------------------------------*/
 .footer-container{
   background-color: #020043;
-  margin-top: 160px;
+  margin-top: 60px;
 }
 .footer_wrapper{
   display: flex;
@@ -619,9 +584,22 @@ input[type="radio"]{
 .footer_socil a:hover{
   color: #FFC637;
 }
-/* footer section end */
+/* footer section end ----------------------------------*/
 
 /*------------------------------ media query section start------------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------ media query for large and medium devices section start------------------------------ */
 
 /* Large devices (991px to 599px) */
@@ -634,9 +612,6 @@ input[type="radio"]{
     display: initial;
   }
   /* ************************* */
-  .logo h2 {
-    font-size: 21px;
-  }
   header .navbar {
     position: absolute;
     top: 100%;
@@ -649,276 +624,116 @@ input[type="radio"]{
   header .navbar ul li {
     width: 100%;
   }
-  header .navbar ul li ul {
-    position: relative;
-    width: 100%;
-  }
-  header .navbar ul li ul li {
-    background: #eee;
-  }
-  header .navbar ul li ul li ul {
-    width: 100%;
-    left: 0;
-  }
+  
   #menu_bar:checked ~ .navbar {
     display: initial;
   }
-  /* btn primary */
-  .btn-primary{
-    width: 100%;
+  /* banner section start --------------*/  
+  .banner-section {
+    height: 300px;
+    overflow: hidden;
   }
-  /* btn primary */
+  /* banner section end ---------------*/
 
-  /* banner section start */
-  .banner-section h2 {
-    font-size: 25px;
-    margin-bottom: 8px;
-    padding-top: 32px;
-  }
-  .banner-section p{
-    color: #fff;
-  }
-  .button-area form {
-    width: 80%;
+  /* care section start -------------*/
+
+  .card_flex{
     flex-direction: column;
-    gap: 16px;
-    padding: 16px;
     align-items: center;
-  }
-  .search-area, .type, .search-bar{
-    width: 100%;
-  }
-  .input-box{
-    width: 100%;
-    padding: 16px;
-    margin: 0 auto; 
-  }
-  .search-bar{
-    width: 100%;
-    padding: 16px; 
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-  /* banner section end */
-
-  /* popular section start */
-  .popular-sec{
-    margin-top: 20px;
-    flex-direction: column;
-  }
-  .content-area{
-    width: 100%;
-  }
-  .img-area{
-    width: 100%;
-  }
-  .content-area h2{
-    font-size: 1.50rem;
-  }
-  .content-area p, .content-area ul li{
-    font-size: 0.85rem;
-    text-align: justify;
-  }
-  /* popular section end */
-
-  /* destination section start*/
-  .destination-section{
-    margin-top: 24px;
-  }
-  .heading-two{
-    color: #131318;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  .heading-p{
-    text-align: center;
-    font-size: 1rem;
-    line-height: 24px;
-    width: 80%;
-    margin: 20px auto;
-  }
-  .destination-image-area{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
     gap: 20px;
   }
-    .area1, .area2, .area3, .area4, .area5, .area6, .area7 {
-    grid-column: 1/-1;
-    grid-row: auto;
+  .margin-top{
+    margin-top: 141px;
   }
-  /* destination section end*/
 
-  /* Why Choose Us sec start */
-  .chose-section{
-    margin: 24px 0px;
+  .care_card{
+    max-width: 100%;
   }
-  .card-one{
-    gap: 16px;
+   
+  .care_card_2 img{
+    margin-left: 0px;
+  }
+  .care_heading{
+    top: -120px;
+  }
+    
+  /* care section end ----------------*/
+
+  /* solution section start -----------*/
+  .solutions_wrapper{
     flex-direction: column;
   }
-  .chose-section h3{
-    font-size: 1.2rem; 
-    margin: 16px 0px;
+  .solution_left_p{
+    margin-right: 0px; 
   }
-  .chose-section p{
-    font-size: 14px;
-  }
-  .card3{
+  .button_secondary{
     width: 100%;
   }
-  /* Why Choose Us sec end */
+  .responsive_imge{
+    width: 100%;
+  }
 
-  /* Deal & Discounts section start */
-  .discount-section{
-    width: 100%;
-    height: 600px;
-  }
-  .discount-section img{
-    width: 100%;
-    height: 100%;
-  }
-  .discount-content{
-    max-width: 100%;
-    right: 20px;
+  .card1{
     bottom: 20px;
     left: 20px;
   }
-  .discount-content h3{
-    font-size: 18px;
-    margin: 10px 0px;
-  }
-  .discount-content p{
-    margin: 10px 0px;
-    font-size: 16px;
-  }
-  .pricce{
-    color: #FF5400;
-    margin:24px 0px;
-  }
-  .dynamic-icon{
-    gap: 2px;
-  }
-  /* Deal & Discounts section end */
+  
+  /* solution section end ------------------*/
 
-  /* Deal & Discounts section start */
-  .image-card-area{
+  /* Empowering section start -------------------------*/
+  .grid_section{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .grid_card_wrapper{
     width: 100%;
-    height: 800px;
-    border: 2px solid red;
   }
-  .image-card-area img{
+  .grid_card_wrapper img{
     width: 100%;
-    height: 100%;
   }
-  .image-card{
-    position: absolute;
-    bottom: 20px;
-    right: 10px;  
-    width: 50%;
-  }
-  .dinamic-section{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .dynamic-icon{
-    display: flex;
-    justify-content: start;
-    gap: 5px;
-    align-items: center;
-  }
-  .dynamic-icon i{
-    color: #FF5400;
-    font-size: 20px;
-  }
-  .pricce{
-    color: #FF5400;
-    font-size: 1.25rem;
-    font-weight: 800;
-    margin: 20px 0px;
-  } 
-  /* Deal & Discounts section end */
+/* Empowering section end ---------------------------*/
 
-  /* video section start */
-  .video-sec{
-    margin: 20px 0px;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .video-content-area{
-    width: 100%;
-  }
-  .video-area{
-    width: 100%;
-    height: 300px;
-  }
-  .video-area iframe{
-    width: 100%;
-    height: 100%;
-  }
-  .video-content-area h2{
-    font-size: 1.50rem;
-    width: 65%;
-    margin: 16px 0px;
-  }
-  .video-content-area p{
-    margin: 0;
-  }
-  .video-content-area ul li{
-    font-size: 0.85rem;
-    text-align: justify;
-    margin: 10px;
-    margin-left: 20px;
-  }
-  /* video section end */
 
-  /* newsletter section start */
-  .newsletter{
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-  .sub-image-area, .sebscribe-area{
-    width: 100%;
-  }
-  .sebscribe-area{
-    padding: 20px;
-  }
-  .sebscribe-area h2{
-    margin: 10px 0px;
-    color: #000;
-  }
-  .sebscribe-area {
-    padding: 15px;
-  }
-  /* newsletter section end */
+/* FAQ section start ---------------------------*/
+.faq-container {
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
 
-  /* footer section start */
-  .footer-wrapper{
-    width: 100%;
-    margin: 0 auto;
-  }
-  .footer-wrapper p{
-    margin: 10px 0px;
-  }
-  .solical-area{
-    gap: 10px;
-  }
-  .solical-area i{
-    margin-top: 10px;
-  }
-  .footer-wrapper hr {
-    margin: 20px 0px;
-  }
-  .footer-container{
-    padding: 33px 0px;
-  }
-  /* footer section end */
+/* FAQ section end --------------------------*/
+
+/* banner bottom start ---------------------*/
+.banner_bottom {
+  height: 300px;
+  padding: 40px;
+}
+.button_area{
+  margin-top: 10px;
+}
+.button_area h2{
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.gap{
+  margin-bottom: 10px;
+}
+/* banner bottom end ----------------------------------*/
+/* footer section start -------------------------------*/
+.footer-container{
+  background-color: #020043;
+  margin-top: 160px;
+}
+.footer_wrapper{
+  flex-direction: column;
+  justify-items: center;
+  gap: 40px;
+  padding: 50px 0px;
+}
+.footer_logo{
+  gap: 15px;
+}
 }
 /*------------------------------ media query for large and medium devices section end------------------------------ */
-
 /*------------------------------ media query for small devices section start------------------------------ */
 /* small devices (Mobile, 600px and down) */
 @media screen and (max-width: 600px) {
@@ -930,9 +745,6 @@ input[type="radio"]{
     display: initial;
   }
   /* ************************* */
-  .logo h2 {
-    font-size: 21px;
-  }
   header .navbar {
     position: absolute;
     top: 100%;
@@ -945,269 +757,147 @@ input[type="radio"]{
   header .navbar ul li {
     width: 100%;
   }
-  header .navbar ul li ul {
-    position: relative;
-    width: 100%;
-  }
-  header .navbar ul li ul li {
-    background: #eee;
-  }
-  header .navbar ul li ul li ul {
-    width: 100%;
-    left: 0;
-  }
-  #menu_bar:checked ~ .navbar {
+   #menu_bar:checked ~ .navbar {
     display: initial;
   }
+  .button{
+    display: none;
+  }
+  /* banner section start --------------*/  
+  .banner-section {
+    height: 150px;
+    overflow: hidden;
+  }
+  /* banner section end ---------------*/
 
-  /* banner section start */
-  .banner-section h2 {
-    font-size: 25px;
-    margin-bottom: 8px;
-    padding-top: 32px;
-  }
-  .banner-section p{
-    color: #fff;
-  }
-  .button-area form {
-    width: 80%;
+  /* care section start -------------*/
+
+  .card_flex{
     flex-direction: column;
-    gap: 16px;
-    padding: 16px;
     align-items: center;
-  }
-  .search-area, .type, .search-bar{
-    width: 100%;
-  }
-  .input-box{
-    width: 100%;
-    padding: 16px;
-    margin: 0 auto;    
-  }
-  .search-bar{
-    width: 100%;
-    padding: 16px; 
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-  }
-  /* banner section end */
-
-  /* popular section start */
-  .popular-sec{
-    margin-top: 20px;
-    flex-direction: column;
-  }
-  .content-area{
-    width: 100%;
-  }
-  .img-area{
-    width: 100%;
-  }
-  .content-area h2{
-    font-size: 1.50rem;
-  }
-  .content-area p, .content-area ul li{
-    font-size: 0.85rem;
-    text-align: justify;
-  }
-  /* popular section end */
-
-  /* destination section start*/
-  .destination-section{
-    margin-top: 24px;
-  }
-  .heading-two{
-    color: #131318;
-    font-size: 1.5rem;
-    margin: 0;
-  }
-  .heading-p{
-    text-align: center;
-    font-size: 1rem;
-    line-height: 24px;
-    width: 80%;
-    margin: 20px auto;
-  }
-  .destination-image-area{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(1, 1fr);
     gap: 20px;
-  }  
-  .area1, .area2, .area3, .area4, .area5, .area6, .area7 {
-    grid-column: 1/-1;
-    grid-row: auto;
   }
-  /* destination section end*/
-
-  /* Why Choose Us sec start */
-  .chose-section{
-    margin: 24px 0px;
-  }
-  .card-one{
-    gap: 16px;
-    flex-direction: column;
+  .margin-top{
+    margin-top: 141px;
   }
 
-  .chose-section h3{
-    font-size: 1.2rem; 
-    margin: 16px 0px;
-  }
-  .chose-section p{
-    font-size: 14px;
-  }
-  .card3{
-    width: 100%;
-  }
-  /* Why Choose Us sec end */
-
-  /* Deal & Discounts section start */
-  .discount-section{
-    width: 100%;
-    height: 600px;
-  }
-  .discount-section img{
-    width: 100%;
-    height: 100%;
-  }
-  .discount-content{
+  .care_card{
     max-width: 100%;
-    right: 20px;
-    bottom: 20px;
-    left: 20px;
   }
-  .discount-content h3{
-    font-size: 18px;
-    margin: 10px 0px;
+  .care_card_2 img{
+    margin-left: 0px;
   }
-  .discount-content p{
-    margin: 10px 0px;
+  .card1 p, .grid_card p {
+    font-size: 10px;
+}
+  .care_heading{
+    top: -100px;
     font-size: 16px;
   }
-  .pricce{
-    color: #FF5400;
-    margin:24px 0px;
-  }
-  .dynamic-icon{
-    gap: 2px;
-  }
-  /* Deal & Discounts section end */
+    
+  /* care section end ----------------*/
 
-  /* Deal & Discounts section start */
-  .image-card-area{
-    width: 100%;
-    height: 800px;
-    border: 2px solid red;
+  /* solution section start -----------*/
+  .solutions_wrapper{
+    flex-direction: column;
   }
-  .image-card-area img{
-    width: 100%;
-    height: 100%;
+  .solution_left_p{
+    margin-right: 0px; 
   }
-  .image-card{
-    position: absolute;
+  .button_secondary{
+    width: 100%;
+  }
+  .responsive_imge_2{
+    width: 100%;
+    font-size: 10px;
+  }
+  .responsive_imge_div{
+    width: 100%;
+  }
+
+  .card1{
     bottom: 20px;
-    right: 10px;  
-    width: 50%;
+    left: 0px;
+    width: 100%;
+    background-color: rgb(2 0 67 / 46%);
+    padding: 20px 10px;
+    height: 150px;
   }
-  .dinamic-section{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .dynamic-icon{
-    display: flex;
-    justify-content: start;
-    gap: 5px;
-    align-items: center;
-  }
-  .dynamic-icon i{
-    color: #FF5400;
+  
+  /* solution section end ------------------*/
+  /* slider section start */
+  .section_heading {
     font-size: 20px;
   }
-  .pricce{
-    color: #FF5400;
-    font-size: 1.25rem;
-    font-weight: 800;
-    margin: 20px 0px;
-  } 
-  /* Deal & Discounts section end */
+  /* slider section end */
 
-  /* video section start */
-  .video-sec{
-    margin: 20px 0px;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .video-content-area{
+  /* Empowering section start -------------------------*/
+  /* Empowering section start -------------------------*/
+    .grid_card_wrapper{
     width: 100%;
   }
-  .video-area{
+  .grid_card_wrapper img{
     width: 100%;
-    height: 300px;
   }
-  .video-area iframe{
-    width: 100%;
-    height: 100%;
+  .grid_section{
+    grid-template-columns: repeat(1, 1fr);
   }
-  .video-content-area h2{
-    font-size: 1.50rem;
-    width: 65%;
-    margin: 16px 0px;
+  .section_grid_heading{
+    margin: 30px 0px 30px 0px;
+  
   }
-  .video-content-area p{
-    margin: 0;
+  .empowering_para{
+    margin-right: 0px;
   }
-  .video-content-area ul li{
-    font-size: 0.85rem;
-    text-align: justify;
-    margin: 10px;
-    margin-left: 20px;
+  .grid_card{
+display: none;
   }
-  /* video section end */
+/* Empowering section end ---------------------------*/
 
-  /* newsletter section start */
-  .newsletter{
-    flex-direction: column;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-  .sub-image-area, .sebscribe-area{
-    width: 100%;
-  }
-  .sebscribe-area{
-    padding: 20px;
-  }
-  .sebscribe-area h2{
-    margin: 10px 0px;
-    color: #000;
-  }
-  .sebscribe-area {
-    padding: 15px;
-  }
-  /* newsletter section end */
 
-  /* footer section start */
-  .footer-wrapper{
-    width: 100%;
-    margin: 0 auto;
-  }
-  .footer-wrapper p{
-    margin: 10px 0px;
-  }
-  .solical-area{
-    gap: 10px;
-  }
-  .solical-area i{
-    margin-top: 10px;
-  }
-  .footer-wrapper hr {
-    margin: 20px 0px;
-  }
-  .footer-container{
-    padding: 33px 0px;
-  }
-  /* footer section end */
+/* FAQ section start ---------------------------*/
+.faq-container {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+/* FAQ section end --------------------------*/
+
+/* banner bottom start ---------------------*/
+.banner_bottom {
+  height: 250px;
+  padding: 40px;
+  padding: 20px;
+}
+.button_area{
+  margin-top: 10px;
+}
+.button_area h2{
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.gap{
+  margin-bottom: 10px;
+}
+.logo_down{
+  display: none;
+}
+/* banner bottom end ----------------------------------*/
+/* footer section start -------------------------------*/
+.footer-container{
+  background-color: #020043;
+  margin-top: 160px;
+}
+.footer_wrapper{
+  flex-direction: column;
+  justify-items: center;
+  gap: 40px;
+  padding: 50px 0px;
+}
+.footer_logo{
+  gap: 15px;
+}
 }
 /*------------------------------ media query for small devices section end------------------------------ */
 
